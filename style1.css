@@ -286,25 +286,7 @@ header {
 
 /*Contenido general del sitio*/
 
-.irarriba{
-    font-size: 20pt;
-    font-weight: 900;
-    text-decoration: none;
-    width:40px;
-    height:40px;
-    color:#0c0a0a;
-    background-color: #6d010a96;
-    position: fixed;
-    bottom:15px;
-    right:20px;
-    border-radius: 100%;
-    text-align: center;
-    transition: 0.4s;
-}
-.irarriba:hover {
-    background-color: #6D010A;
-    
-}
+
 
 .encabezado {
     padding: 0px 70px;
@@ -413,6 +395,7 @@ header {
     transition: 0.6s
     
 }
+
 a:hover {
     color:#FFEEE3;
     text-decoration-color: #FFEEE3;
@@ -548,3 +531,92 @@ footer {
 #copyright p {
     color: #8a827c;
 }
+/*flecha para volver arriba*/
+.irarriba{
+    font-size: 20pt;
+    font-weight: 900;
+    text-decoration: none;
+    width:40px;
+    height:40px;
+    color:#0c0a0a;
+    background-color: #6d010a96;
+    position: fixed;
+    bottom:15px;
+    right:20px;
+    border-radius: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+.irarriba:hover {
+    background-color: #6D010A;
+    
+}
+.arrow {
+    border: solid #0c0a0a;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    position:relative;
+    top:15%;
+    transition: 0.4s;
+  }
+.arrow:hover {
+    border:solid #FFEEE3;
+    border-width: 0 3px 3px 0;
+    position:relative;
+    top:8%;
+}
+#menu .toggle-button {
+    position: absolute;
+    top:7px;
+    right: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+#menu .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color:#0c0a0a;
+    border-radius: 10px;
+}
+
+@media (max-width: 981px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+    #menu {
+        display:block;
+
+    }
+    #logotipo {
+        display: ;
+    }
+    #menu ul {
+        xdisplay: none;
+        width: 100%;
+        display:block
+        
+    }
+
+    #menu ul li {
+        text-align: center;
+    }
+
+    #menu ul li a {
+        padding: .5rem 1rem;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+} 
