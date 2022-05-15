@@ -159,6 +159,7 @@ header {
     position: absolute;
     right: 72px;
     bottom: 45%;
+    
 }
 
 #menu li {
@@ -277,7 +278,8 @@ header {
     background-color:#D65000;
     color:#191d1b;
     text-decoration: none;
-    width:130px;
+    width:fit-content;
+    padding: 0 7px;
     border-radius: 10px;
     font-weight: 700;
     margin:10px auto;
@@ -331,6 +333,15 @@ header {
 .contenido .titulo1 {
     font-size: 48pt;
     text-align: center;
+}
+
+.titulo1 a {
+    text-decoration: none;
+    color:#191d1b;
+}
+
+.titulo1 a:hover {
+    color:#6D010A;
 }
 .titulo2 {
     font-size: 26pt;
@@ -447,16 +458,13 @@ li {
 
 /*contacto*/
 #mapa {
-    float: inline-start;
-    border: solid #6D010A 5px;
+    border: solid #6d010ad3 5px;
 }
 
 .datoscontacto {
-    display: inline-block;
-    position: relative;
-    bottom: 280px;
-    left: 100px;
     text-align: justify;
+    padding: 3em 6em;
+    float:right;
 }
 
 /*sobrenosotros*/
@@ -568,55 +576,180 @@ footer {
     position:relative;
     top:8%;
 }
-#menu .toggle-button {
-    position: absolute;
-    top:7px;
-    right: 1em;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+.menu-btn{
+    display: none;
 }
-#menu .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color:#0c0a0a;
-    border-radius: 10px;
-}
+
+/*web responsiva*/
 
 @media (max-width: 981px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-    #menu {
-        display:block;
-
-    }
-    #logotipo {
-        display: ;
-    }
-    #menu ul {
-        xdisplay: none;
-        width: 100%;
-        display:block
+  
+   #lista-menu {
+        position: fixed; 
+        top:-450px; 
+        left: 0px;    
+        z-index: 3;
+        max-height: 0;
+        transition:1s;
+       
         
     }
-
-    #menu ul li {
-        text-align: center;
+    .menu-btn:checked ~ #lista-menu { 
+        top:0px;
     }
 
-    #menu ul li a {
-        padding: .5rem 1rem;
+    .menu-icon {
+        cursor: pointer;
+        padding: 20px;
+        position: fixed;
+        top:2em;
+        right:2.5em;
+        user-select: none;
+        background-color: #6D010A;
+        
+    }
+      
+      .header .menu-icon .nav-icon {
+        background:#FFEEE3;
+        display: block;
+        height: 2px;
+        position: fixed;
+        top:3em;
+        right:3em;
+        transition: background .2s ease-out;
+        width: 1.5em;
+    }
+      
+      .header .menu-icon .nav-icon:before,
+      .header .menu-icon .nav-icon:after {
+        background:#FFEEE3;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+        
+      }
+      
+      .header .menu-icon .nav-icon:before {
+        top: 5px;
+      }
+      
+      .header .menu-icon .nav-icon:after {
+        top: -5px;
+      }
+      
+      /* menu btn */
+           
+      .header .menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+        transform: rotate(-45deg);
+        top:0;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+        transform: rotate(45deg);
+        top:0;
+      }
+         
+   
+    #logotipo {
+        width: 40%;
+        display: inline-block;
+    }
+    #eslogan {
+        font-size:5ex;
+    }
+        
+    #menu li {
+        border:1px solid #0c0a0a;
+        padding:1em;
+        margin:0 auto;
+        width:216%;
+        border-radius: 0%;
+        font-size: 2em;
+        display:block;
     }
 
-    #menu.active {
-        display: flex;
+    .irarriba {
+        display: none;
     }
+    .contenido .textogrande {
+        font-size: 2em;
+    }
+    .caja p {
+        
+        font-size: 3em;
+        
+      }
+     .footer {
+        height:fit-content;
+        grid-template-columns: 1fr;   
+    }
+    .footer div {
+        background-color:#191d1bc4;
+    }
+    .footer div h4 {
+        font-size: 2em;
+    }
+    
+    .footer div p {
+        font-size: 2em;
+    }
+    .cajaproducto {
+        
+        margin:0 auto;
+        width: 1200px;
+        height:750px;
+        padding:40px 40px 80px 40px;
+        
+    }
+    
+    .cajaproducto2 {
+        
+        width: 1200px;
+        height:700px;
+        margin:0 auto;
+        padding:40px 40px 80px 40px;
+        position: relative;
+        right:0%
+    }
+    .productogrande h2{
+        font-size: 3.5em;
+    }
+    .productogrande p {
+        font-size: 3.5ex;
+    }
+    .titulo2 {
+        font-size: 4em;
+        
+    }
+    .contenido p{
+        font-size: 30pt;
+    }
+    .contenido li {
+        font-size: 1em;
+    }
+    
+    .contenido h2 {
+        font-size: 3em;
+     
+    }
+    
+    .contenido h3 {
+        font-size: 2.5em;
+       
+    }
+    .contenido .blogintro {
+        font-size: 35pt;
+       
+    }
+    .datoscontacto {
+       float: none;
+    }
+    
 } 
