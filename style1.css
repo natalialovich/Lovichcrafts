@@ -114,6 +114,8 @@ html {
     margin: 0 auto;
     min-height: 100vh;
     background-color: #FFEEE3;
+    position: relative;
+    z-index: 1; /*no funciona*/
 }
 
 p,
@@ -237,7 +239,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     position: relative;
-    z-index: 3;
+    z-index: 10;
 }
 
 .caja {
@@ -378,7 +380,7 @@ header {
 }
 
 .cajaproducto2 {
-    z-index:2;
+    z-index:8;
     background-color:#191d1b;
     width: 1200px;
     height:670px;
@@ -428,7 +430,7 @@ a:hover {
 .blognav a {
     text-decoration: none;
     color: #D65000;
-    transition: 0.4s
+    transition: 0.4s;
 }
 
 .blognav a:hover {
@@ -586,9 +588,9 @@ footer {
   
    #lista-menu {
         position: fixed; 
-        top:-450px; 
+        top:-1000px; 
         left: 0px;    
-        z-index: 3;
+        z-index: 5;
         max-height: 0;
         transition:1s;
        
@@ -600,24 +602,25 @@ footer {
 
     .menu-icon {
         cursor: pointer;
-        padding: 20px;
+        padding: 50px;
         position: fixed;
-        top:2em;
+        top:2.5em;
         right:2.5em;
         user-select: none;
         background-color: #6D010A;
+        z-index:2;
         
     }
       
       .header .menu-icon .nav-icon {
         background:#FFEEE3;
         display: block;
-        height: 2px;
+        height: 4px;
         position: fixed;
-        top:3em;
-        right:3em;
+        top:5.5em;
+        right:3.3em;
         transition: background .2s ease-out;
-        width: 1.5em;
+        width: 4.5em;
     }
       
       .header .menu-icon .nav-icon:before,
@@ -633,11 +636,11 @@ footer {
       }
       
       .header .menu-icon .nav-icon:before {
-        top: 5px;
+        top: 13px;
       }
       
       .header .menu-icon .nav-icon:after {
-        top: -5px;
+        top: -13px;
       }
       
       /* menu btn */
@@ -671,7 +674,7 @@ footer {
         margin:0 auto;
         width:216%;
         border-radius: 0%;
-        font-size: 2em;
+        font-size: 3.2em;
         display:block;
     }
 
@@ -679,11 +682,11 @@ footer {
         display: none;
     }
     .contenido .textogrande {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .caja p {
         
-        font-size: 3em;
+        font-size: 3.5em;
         
       }
      .footer {
@@ -692,6 +695,7 @@ footer {
     }
     .footer div {
         background-color:#191d1bc4;
+        padding-bottom: 50px;
     }
     .footer div h4 {
         font-size: 2em;
@@ -701,35 +705,42 @@ footer {
         font-size: 2em;
     }
     .cajaproducto {
-        
-        margin:0 auto;
-        width: 1200px;
-        height:750px;
-        padding:40px 40px 80px 40px;
+        width: fit-content;
+        height: fit-content;
+        padding:40px 40px 110px 40px;
         
     }
     
     .cajaproducto2 {
         
-        width: 1200px;
-        height:700px;
-        margin:0 auto;
+        width: fit-content;
+        height: fit-content;
         padding:40px 40px 80px 40px;
         position: relative;
         right:0%
+    }
+    .productogrande{
+        vertical-align:baseline;
+        
     }
     .productogrande h2{
         font-size: 3.5em;
     }
     .productogrande p {
-        font-size: 3.5ex;
+        display:block;
+        font-size: 3em;
+        width:190%;
+        margin:50px 0px;
+    }
+    .fotogrande {
+        margin: 50px 0px;        
     }
     .titulo2 {
         font-size: 4em;
         
     }
     .contenido p{
-        font-size: 30pt;
+        font-size: 2.5em;
     }
     .contenido li {
         font-size: 1em;
@@ -745,7 +756,7 @@ footer {
        
     }
     .contenido .blogintro {
-        font-size: 35pt;
+        font-size: 2.5em;
        
     }
     .datoscontacto {
