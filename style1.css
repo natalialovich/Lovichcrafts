@@ -465,9 +465,42 @@ li {
 
 .datoscontacto {
     text-align: justify;
-    padding: 3em 6em;
+    padding: 3em 8em;
     float:right;
+
 }
+
+.datoscontacto ul li{
+    list-style: none;
+    color:#D65000;
+    font-weight: 600;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  
+  /* Facebook */
+  .fa {
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color:#FFEEE3;
+    background-color:#D65000;
+}
+    
+
 
 /*sobrenosotros*/
 .foto {
@@ -514,8 +547,6 @@ footer {
 }
 
 .footer div p {
-
-
     text-align: center;
     text-decoration: none;
 
@@ -523,7 +554,8 @@ footer {
 
 .footer div p a {
     text-decoration: none;
-    color: #D65000;
+    color: #e69769;
+    text-shadow: 1pt 1pt #0c0a0a;
 }
 
 .footer div p a:hover {
@@ -590,7 +622,7 @@ footer {
         position: fixed; 
         top:-1000px; 
         left: 0px;    
-        z-index: 5;
+        z-index: 50;
         max-height: 0;
         transition:1s;
        
@@ -608,7 +640,7 @@ footer {
         right:2.5em;
         user-select: none;
         background-color: #6D010A;
-        z-index:2;
+        z-index:20;
         
     }
       
