@@ -1,92 +1,8 @@
-/*
-colores: 
-naranja #D65000
-verde oscuro: #032E2D
-gris oscuro: #191d1b
-perla: #FFEEE3
+/*Hoja de estilos para web de Lovich crafts, proyecto presentado por Natalia Lovich.
 
-*/
+Se hace un RESET en de varios elementos a continuación */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -95,17 +11,13 @@ video {
     box-sizing: border-box;
 }
 
+/*Estilo de los elementos más generales del sitio,  Min-height:100vh le da el alto de la pantalla elemento body*/
 
 html {
-
     width: 100%;
     overflow-x: hidden;
-
 }
 
-/* --al poner un ancho a la etiqueta body se descentra el contenido
---the HTML element assumes the background-color amd height of the body element if you don't set a separate background-color on the html element.
---Min-height:100vh le da el alto de la pantalla elemento body*/
 #wrapper {
     background-color: #e5e5f7;
     opacity: 1;
@@ -115,16 +27,9 @@ html {
     min-height: 100vh;
     background-color: #FFEEE3;
     position: relative;
-    z-index: 1; /*no funciona*/
 }
 
-p,
-ul,
-ol,
-h1,
-h2,
-h4,
-h3 {
+p,ul,ol,h1,h2,h4,h3 {
     color: #191d1b;
     font-family: "Barlow Condensed", serif;
     font-weight: 400;
@@ -140,9 +45,7 @@ h3 {
     position: relative;
 }
 
-/*
-Empieza el menú de navegación 
-*/
+/*Empieza el menú de navegación*/
 
 header {
     max-width: 1100px;
@@ -161,7 +64,6 @@ header {
     position: absolute;
     right: 72px;
     bottom: 45%;
-    
 }
 
 #menu li {
@@ -177,7 +79,8 @@ header {
     background-color: #6D010A;
     transition: 0.6s;
 }
-#menu li:hover{
+
+#menu li:hover {
     background-color: #191d1b;
 }
 
@@ -198,6 +101,7 @@ header {
 }
 
 /*Empieza la página principal*/
+
 #fondo {
     background-image: url(./Images/imagen-fondo-madera.jpg);
     background-size: 1400px;
@@ -247,7 +151,6 @@ header {
     border-radius: 10px;
     margin: 22px;
     height: 240px;
-
 }
 
 #caja1 {
@@ -269,28 +172,27 @@ header {
     line-height: 240px;
     color: white;
     text-shadow: 1px 1px 1px #0c0a0a;
-  }
+}
+
 .caja a {
-    text-decoration-color:#191d1b;
+    text-decoration-color: #191d1b;
     transition: 0.6s
 }
 
 .boton {
-    display:block;
-    background-color:#D65000;
-    color:#191d1b;
+    display: block;
+    background-color: #D65000;
+    color: #191d1b;
     text-decoration: none;
-    width:fit-content;
+    width: fit-content;
     padding: 0 7px;
     border-radius: 10px;
     font-weight: 700;
-    margin:10px auto;
+    margin: 10px auto;
     transition: 0.3s
 }
 
 /*Contenido general del sitio*/
-
-
 
 .encabezado {
     padding: 0px 70px;
@@ -307,7 +209,6 @@ header {
     text-align: center;
     font-weight: bold;
 }
-
 
 .contenido {
     padding: 70px;
@@ -339,18 +240,19 @@ header {
 
 .titulo1 a {
     text-decoration: none;
-    color:#191d1b;
+    color: #191d1b;
 }
 
 .titulo1 a:hover {
-    color:#6D010A;
+    color: #6D010A;
 }
+
 .titulo2 {
     font-size: 26pt;
     font-weight: 600;
 }
 
-.titulo2:after {
+.titulo2::after {
     content: "";
     display: block;
     background-color: #6D010A;
@@ -358,66 +260,69 @@ header {
     margin: 20px 0;
     width: 100px;
 }
+
 #instagramfeed {
     width: 1000px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 /*Página de productos*/
 
 .cajas img {
-    
     max-width: 100%;
     object-fit: scale-down;
 }
 
 .cajaproducto {
-    background-color:#191d1b;
-    margin:40px 0px -100px 0px;
+    background-color: #191d1b;
+    margin: 40px 0px -100px 0px;
     width: 1200px;
-    height:670px;
-    padding:40px 40px 80px 40px;
-    
+    height: 670px;
+    padding: 40px 40px 80px 40px;
 }
 
 .cajaproducto2 {
-    z-index:8;
-    background-color:#191d1b;
+    z-index: 8;
+    background-color: #191d1b;
     width: 1200px;
-    height:670px;
-    margin:40px 0px -100px 0px;
-    padding:40px 40px 80px 40px;
+    height: 670px;
+    margin: 40px 0px -100px 0px;
+    padding: 40px 40px 80px 40px;
     position: relative;
     right: 150px;
 }
+
 .productogrande {
-    
-    display:inline-block;
-    width:400px;
-    height:500px;
-    margin:10px;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
     font-size: 13pt;
     vertical-align: top;
-    color:#FFEEE3;
+    color: #FFEEE3;
 }
-.productogrande p, .productogrande h2{
-    color:#FFEEE3;
+
+.productogrande p, .productogrande h2 {
+    color: #FFEEE3;
 }
 
 .productogrande a {
-    color:#D65000;
+    color: #D65000;
     transition: 0.6s
-    
 }
 
 a:hover {
-    color:#FFEEE3;
+    color: #FFEEE3;
     text-decoration-color: #FFEEE3;
 }
+
 .fotogrande {
     background-color: #794a2b;
     margin: 10px;
 }
+
 /*Blog*/
+
 .blognav {
     display: inline-block;
     position: absolute;
@@ -436,6 +341,7 @@ a:hover {
 .blognav a:hover {
     color: #191d1b;
 }
+
 .contenido .blogintro {
     font-size: 16pt;
     font-weight: bold;
@@ -451,7 +357,7 @@ a:hover {
 
 .imagenblog3 {
     margin: 0px 20px;
-    float:right;
+    float: right;
 }
 
 li {
@@ -459,6 +365,7 @@ li {
 }
 
 /*contacto*/
+
 #mapa {
     border: solid #6d010ad3 5px;
 }
@@ -466,49 +373,41 @@ li {
 .datoscontacto {
     text-align: justify;
     padding: 3em 8em;
-    float:right;
-
+    float: right;
 }
 
-.datoscontacto ul li{
+.datoscontacto ul li {
     list-style: none;
-    color:#D65000;
+    color: #D65000;
     font-weight: 600;
 }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  
-  
-  /* Facebook */
-  .fa {
-    padding: 18px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color:#FFEEE3;
-    background-color:#D65000;
-}
-    
 
+/* Botones de Facebook he Instagram */
+
+.fa {
+    font-size: 2em;
+    width:50px;
+    line-height:4em;
+    text-align: center;
+    text-decoration: none;
+    padding:18px;
+    border-radius: 50%;
+    color: #FFEEE3;
+    background-color: #D65000;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
 
 /*sobrenosotros*/
+
 .foto {
     width: 160px;
-   float:right;
-   margin:0 20px;
-   border-radius: 100%;
-   border:solid #6D010A 3px;
+    float: right;
+    margin: 0 20px;
+    border-radius: 100%;
+    border: solid #6D010A 3px;
 }
 
 /*Empieza el pie de página*/
@@ -541,15 +440,13 @@ footer {
 
 .footer div h4 {
 
-    color:#FFEEE3;
+    color: #FFEEE3;
     text-align: center;
-
 }
 
 .footer div p {
     text-align: center;
     text-decoration: none;
-
 }
 
 .footer div p a {
@@ -559,40 +456,43 @@ footer {
 }
 
 .footer div p a:hover {
-    
-    color:#FFEEE3;
+
+    color: #FFEEE3;
 }
 
 #copyright {
     color: #FFEEE3;
     margin: 15px auto 0 auto;
     text-align: center;
-
 }
 
 #copyright p {
     color: #8a827c;
 }
+
 /*flecha para volver arriba*/
-.irarriba{
+
+.irarriba {
     font-size: 20pt;
     font-weight: 900;
     text-decoration: none;
-    width:40px;
-    height:40px;
-    color:#0c0a0a;
+    width: 40px;
+    height: 40px;
+    color: #0c0a0a;
     background-color: #6d010a96;
     position: fixed;
-    bottom:15px;
-    right:20px;
+    bottom: 15px;
+    right: 20px;
     border-radius: 100%;
     text-align: center;
     transition: 0.4s;
 }
+
 .irarriba:hover {
     background-color: #6D010A;
-    
+
 }
+
 .arrow {
     border: solid #0c0a0a;
     border-width: 0 3px 3px 0;
@@ -600,199 +500,229 @@ footer {
     padding: 6px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-    position:relative;
-    top:15%;
+    position: relative;
+    top: 15%;
     transition: 0.4s;
-  }
-.arrow:hover {
-    border:solid #FFEEE3;
-    border-width: 0 3px 3px 0;
-    position:relative;
-    top:8%;
 }
-.menu-btn{
+
+.arrow:hover {
+    border: solid #FFEEE3;
+    border-width: 0 3px 3px 0;
+    position: relative;
+    top: 8%;
+}
+
+.menu-btn {
     display: none;
 }
 
-/*web responsiva*/
+/*Web responsiva*/
+
+@media (max-width: 1275px) {
+
+ /*Alineacion de elementos de la página de productos para tabletas*/
+
+    .cajaproducto {
+        width: fit-content;
+        height: fit-content;
+        padding: 40px 40px 110px 40px;
+    }
+
+    .cajaproducto2 {
+        width: fit-content;
+        height: fit-content;
+        padding: 40px 40px 80px 40px;
+        position: relative;
+        right: 0%;
+    }
+
+    .productogrande {
+        vertical-align: baseline;
+    }
+
+    .productogrande p {
+        display: block;
+        width: 190%;
+        margin: 50px 0px;
+    }
+
+}
 
 @media (max-width: 981px) {
-  
-   #lista-menu {
-        position: fixed; 
-        top:-1000px; 
-        left: 0px;    
+
+/*Estilos para tabletas y movil empezando por el menu que se colapsa*/
+
+    #lista-menu {
+        position: fixed;
+        top: -1000px;
+        left: 0px;
         z-index: 50;
         max-height: 0;
-        transition:1s;
-       
-        
+        opacity: 0;
+        transition: 1s;
     }
-    .menu-btn:checked ~ #lista-menu { 
-        top:0px;
+
+    .menu-btn:checked~#lista-menu {
+        opacity: 1;
+        top: 0px;
     }
 
     .menu-icon {
         cursor: pointer;
         padding: 50px;
         position: fixed;
-        top:2.5em;
-        right:2.5em;
+        top: 2.5em;
+        right: 2.5em;
         user-select: none;
         background-color: #6D010A;
-        z-index:20;
-        
+        z-index: 20;
     }
-      
-      .header .menu-icon .nav-icon {
-        background:#FFEEE3;
+
+    .header .menu-icon .nav-icon {
+        background: #FFEEE3;
         display: block;
         height: 4px;
         position: fixed;
-        top:5.5em;
-        right:3.3em;
+        top: 5.5em;
+        right: 3.3em;
         transition: background .2s ease-out;
         width: 4.5em;
     }
-      
-      .header .menu-icon .nav-icon:before,
-      .header .menu-icon .nav-icon:after {
-        background:#FFEEE3;
+
+    .header .menu-icon .nav-icon::before,
+    .header .menu-icon .nav-icon::after {
+        background: #FFEEE3;
         content: '';
         display: block;
         height: 100%;
         position: absolute;
         transition: all .2s ease-out;
         width: 100%;
-        
-      }
-      
-      .header .menu-icon .nav-icon:before {
+    }
+
+    .header .menu-icon .nav-icon::before {
         top: 13px;
-      }
-      
-      .header .menu-icon .nav-icon:after {
+    }
+
+    .header .menu-icon .nav-icon::after {
         top: -13px;
-      }
-      
-      /* menu btn */
-           
-      .header .menu-btn:checked ~ .menu-icon .nav-icon {
+    }
+
+    /*Botón del menu*/
+
+    .header .menu-btn:checked~.menu-icon .nav-icon {
         background: transparent;
-      }
-      
-      .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    }
+
+    .header .menu-btn:checked~.menu-icon .nav-icon::before {
         transform: rotate(-45deg);
-        top:0;
-      }
-      
-      .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+        top: 0;
+    }
+
+    .header .menu-btn:checked~.menu-icon .nav-icon::after {
         transform: rotate(45deg);
-        top:0;
-      }
-         
-   
+        top: 0;
+    }
+
+    #menu li {
+        border: 1px solid #0c0a0a;
+        padding: 1em;
+        margin: 0 auto;
+        width: 216%;
+        border-radius: 0%;
+        font-size: 3.2em;
+        display: block;
+    }
+
+    /*Resto de elementos*/
+
     #logotipo {
         width: 40%;
         display: inline-block;
     }
+
     #eslogan {
-        font-size:5ex;
-    }
-        
-    #menu li {
-        border:1px solid #0c0a0a;
-        padding:1em;
-        margin:0 auto;
-        width:216%;
-        border-radius: 0%;
-        font-size: 3.2em;
-        display:block;
-    }
+        font-size: 5ex;
+    } 
 
     .irarriba {
         display: none;
     }
+
     .contenido .textogrande {
         font-size: 2.5em;
     }
+
     .caja p {
-        
         font-size: 3.5em;
-        
-      }
-     .footer {
-        height:fit-content;
-        grid-template-columns: 1fr;   
     }
+
+    .productogrande h2 {
+        font-size: 2.8em;
+    }
+
+    .productogrande p {
+        font-size: 2.3em;
+    }
+
+    .fa {
+        width:80px;
+    }
+
+    .blognav {
+        right: 100px;
+        top: 280px;
+        font-size: 2em;
+    }
+
+    .footer {
+        height: fit-content;
+        grid-template-columns: 1fr;
+    }
+
     .footer div {
-        background-color:#191d1bc4;
+        background-color: #191d1bc4;
         padding-bottom: 50px;
     }
+
     .footer div h4 {
         font-size: 2em;
     }
-    
+
     .footer div p {
         font-size: 2em;
     }
-    .cajaproducto {
-        width: fit-content;
-        height: fit-content;
-        padding:40px 40px 110px 40px;
-        
-    }
-    
-    .cajaproducto2 {
-        
-        width: fit-content;
-        height: fit-content;
-        padding:40px 40px 80px 40px;
-        position: relative;
-        right:0%
-    }
-    .productogrande{
-        vertical-align:baseline;
-        
-    }
-    .productogrande h2{
-        font-size: 3.5em;
-    }
-    .productogrande p {
-        display:block;
-        font-size: 3em;
-        width:190%;
-        margin:50px 0px;
-    }
+
     .fotogrande {
-        margin: 50px 0px;        
+        margin: 50px 0px;
     }
+
     .titulo2 {
         font-size: 4em;
-        
     }
-    .contenido p{
+
+    .contenido p {
         font-size: 2.5em;
     }
+
     .contenido li {
         font-size: 1em;
     }
-    
+
     .contenido h2 {
         font-size: 3em;
-     
     }
-    
+
     .contenido h3 {
         font-size: 2.5em;
-       
     }
+
     .contenido .blogintro {
         font-size: 2.5em;
-       
     }
+
     .datoscontacto {
-       float: none;
+        float: none;
     }
-    
-} 
+
+}
