@@ -575,7 +575,7 @@ footer {
         right: 2.5em;
         user-select: none;
         background-color: #6D010A;
-        z-index: 20;
+        z-index: 54;
     }
 
     .header .menu-icon .nav-icon {
@@ -673,6 +673,8 @@ footer {
         right: 100px;
         top: 280px;
         font-size: 2em;
+        max-width:60%;
+        z-index:6;
     }
 
     .footer {
