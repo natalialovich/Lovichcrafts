@@ -2,8 +2,10 @@
 
 /*Estilos generales*/
 body {
+	/*esconde el scroll horizontal*/
 	overflow-x: hidden; 
-	background-color: rgb(6, 41, 35);
+	background-color:  rgb(6, 41, 35);
+	background-image: linear-gradient( rgba(255, 255, 0, 0),rgba(179, 180, 102, 0.911), rgba(255, 255, 0, 0));
 }
 
 h1 {
@@ -30,14 +32,16 @@ h1 {
 	height:500px;
 	position:fixed;
 	bottom:0px;	
+	right:0px;
 }
 
 /*Panel de control*/
 #controles {
+	margin:10px;
 	border-radius:20px;
 	position: absolute;
-	right: 60px;
-	top: 500px;
+	right: 10%;
+	top: 75%;
 	min-width: 170px;
 	background-color:rgba(11, 4, 6, 0.65);
 	display: flex;
@@ -100,7 +104,7 @@ button[disabled]{
 label {
 	height: 50px;
 	padding: 5px;
-    margin:10px 5px 10px 10px;
+    margin:10px 5px 10px 18px;
 	font-family:sans-serif;
 	font-size:13pt;
 	font-weight:600;
@@ -112,7 +116,7 @@ label {
 /*Visor para el fondo*/
 #visor{
 	margin: 0 auto;
-	width: 100%;
+	max-width: 100%;
 	height:600px; 
 	background-color: salmon;
 	overflow: hidden;
@@ -143,10 +147,6 @@ label {
 	left: 145px;
 	width: 140px;
 	transform: rotate(10deg);
-	animation-name: ardilla2;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
 	visibility: hidden;
 }
 
@@ -162,10 +162,9 @@ label {
 	animation-timing-function: linear;
 }
 
-
 @keyframes ardilla{
 	0% {right: -200px; top: 10px }
 	35%{transform: rotate(23deg);}
 	60%{transform: rotate(-15deg);}
-	100%{right: 2000px; top:135px }
+	100%{right: 2000px; top:145px }
 }

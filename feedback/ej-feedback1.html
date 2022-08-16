@@ -4,6 +4,8 @@
 	<head>
 		<meta charset = "utf-8">
 		<title>Ardilla Voladora</title>
+		<!--Define como será visualizado especialmente e impide hacer zoom en el movil-->
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<!--enlace a la hoja de estilos-->
 		<link rel = "stylesheet" href = "ej-feedback.css">
 		<!--Fuente para el encabezado de la página-->
@@ -15,7 +17,8 @@
 		<article>
 			<h1>Ardilla Voladora</h1>
 			<div id="visor">
-				<div id="paisaje" ></div>
+				<div id="paisaje">
+				</div>
 			</div>
 			<img id="ardilla" src="ardilla.png" alt="ardilla voladora">
 			<img id="arbol" src="arbol2.png" alt="arbol">
@@ -27,7 +30,7 @@
 				<select id="lista" name="velocidad" class="sombra">
 					<option value="1">Muy lento</option>
 					<option value="2">Lento</option>
-					<option value="3"selected>Normal</option>
+					<option value="3" selected>Normal</option>
 					<option value="4">Rápido</option>
 					<option value="5">Muy Rápido</option>
 				</select>
