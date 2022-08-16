@@ -16,6 +16,7 @@ function parar() {
   //deshabilitar los botones de volar y parar hasta que haya aterrizado 
   btnVolar.disabled = true;
   btnParar.disabled = true;
+  btnParar.textContent = "Aterrizando!"
   // función a realizar durante el intervalo
   function aterrizar(){
     //guarda en una variable los datos de pocición del elemento ardilla 
@@ -30,6 +31,7 @@ function parar() {
     ardilla2.style.visibility = "visible";
     clearInterval(miIntervalo);
     btnVolar.disabled = false;
+    btnParar.textContent = "Listo!"
     }
   }
 }
@@ -42,6 +44,7 @@ function volar() {
   ardilla.style.animationPlayState = "running";
   ardilla.style.visibility = "visible";
   ardilla2.style.visibility = "hidden";
+  btnParar.textContent = "Aterrizar"
 }
 
 //Controles de velocidad 

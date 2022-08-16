@@ -55,9 +55,9 @@ h1 {
 	font-size:13pt;
 	font-weight:600;
 	background-color: salmon;
-	width: 100px;
+	width: fit-content;
 	height: 45px;
-	padding: 5px;
+	padding: 5px 15px;
     margin:10px;
     color:aliceblue;
     border: 1px solid rgb(191, 197, 226);
@@ -93,7 +93,7 @@ button[disabled]{
 	font-weight:700;
 	background-color: salmon;
 	height: 45px;
-	padding: 5px;
+	padding: 5px 0px 5px 5px;
     margin:10px;
 }
 
